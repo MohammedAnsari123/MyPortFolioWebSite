@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Futuristic & Dynamic Portfolio Website
 
-## Getting Started
+A high-performance, responsive portfolio website built for **Mohammed Ansari** to showcase full-stack development skills, projects, and system-building philosophy.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Directory)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Email Service**: Nodemailer (SMTP)
+
+## ✨ Features
+
+- **Dynamic Hero Section**: Typing effects, animated gradients, and glassmorphism UI.
+- **Component-Based Architecture**: Modular components for Header, Hero, About, Skills, Projects, Experience, and Contact.
+- **Interactive UI**: Smooth scroll-triggered animations and hover effects.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
+- **Working Contact Form**: Integrated with `nodemailer` to send real emails directly from the portfolio.
+- **SEO Optimized**: Meta tags and semantic HTML structure.
+
+## 🛠️ Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+### Environment Setup
+
+Create a `.env.local` file in the root directory to configure the email service (required for the contact form):
+
+```env
+EMAIL_USER="your-email@gmail.com"
+EMAIL_PASS="your-app-password"
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_PORT="587"
+```
+
+*Note: If using Gmail, you must generate an [App Password](https://myaccount.google.com/apppasswords).*
+
+### Run Locally
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The easiest way to deploy this Next.js app is to use the [Vercel Platform](https://vercel.com/new).
 
-## Learn More
+1. Push your code to a GitHub repository.
+2. Sign up/Log in to Vercel and "Import Project".
+3. **Important**: In the Vercel Project Settings, go to **Environment Variables** and add the same variables from your `.env.local` (`EMAIL_USER`, `EMAIL_PASS`, etc.).
+4. Click **Deploy**.
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+├── app/
+│   ├── api/            # Backend API routes (Contact form)
+│   ├── components/     # Reusable UI components (Hero, Navbar, etc)
+│   ├── globals.css     # Global styles & Tailwind configuration
+│   ├── layout.tsx      # Root layout & Metadata
+│   └── page.tsx        # Main landing page assembly
+├── public/             # Static assets
+└── ...
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Theme & Design
 
-## Deploy on Vercel
+The site uses a custom "Deep Space & Neon" palette defined in `globals.css`:
+- **Primary**: Deep Space Black (`#0B0F1A`) & Soft White (`#E5E7EB`)
+- **Accents**: Neon Cyan (`#00F5FF`), Electric Purple (`#7F5AF0`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Designed and built by **Mohammed Ansari**.
